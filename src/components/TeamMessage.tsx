@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 
 export const TeamMessage: React.FC = () => {
   return (
-    <div className="relative max-w-4xl mx-auto px-6 py-12 md:p-12 rounded-3xl bg-gradient-to-b from-[#0B1F3A]/30 to-black/10 border border-white/10 overflow-hidden box-glow-cyan hover:border-[#00D4FF]/25 transition-all duration-500">
+    <div className="relative max-w-4xl mx-auto px-6 py-12 md:p-12 rounded-3xl bg-gradient-to-b from-[#0B1F3A]/30 to-black/10 glowing-card-border overflow-hidden box-glow-cyan">
       {/* Absolute faint background SVG quote */}
       <div className="absolute top-10 left-10 text-[#00D4FF]/3 select-none pointer-events-none no-print">
         <Quote className="h-44 w-44 font-light rotate-180" />

@@ -109,7 +109,7 @@ export default function App() {
                 </p>
 
                 {/* Info label box */}
-                <div className="p-4 bg-[#0B1F3A]/30 border border-[#00D4FF]/20 rounded-xl max-w-lg">
+                <div className="p-4 bg-[#0B1F3A]/30 glowing-card-border rounded-xl max-w-lg">
                   <div className="flex items-start gap-3">
                     <Lock className="h-4 w-4 text-[#00D4FF] shrink-0 mt-0.5" />
                     <p className="text-xs text-[#D6DCE5]/70 leading-relaxed">
@@ -139,7 +139,7 @@ export default function App() {
 
               {/* Beautiful Canadian SUV image render preview framed by luxury bezel */}
               <div className="lg:col-span-6 relative flex justify-center">
-                <div className="relative w-full max-w-xl bg-gradient-to-b from-[#0B1F3A] to-[#071120] p-2.5 rounded-2xl border border-white/10 shadow-2xl overflow-hidden group">
+                <div className="relative w-full max-w-xl bg-gradient-to-b from-[#0B1F3A] to-[#071120] p-2.5 rounded-2xl glowing-card-border overflow-hidden group">
                   <div className="absolute top-3 left-4 flex gap-1.5 z-10">
                     <span className="h-2 w-2 rounded-full bg-red-500/60" />
                     <span className="h-2 w-2 rounded-full bg-yellow-500/60" />
@@ -198,7 +198,7 @@ export default function App() {
                 return (
                   <div
                     key={card.id}
-                    className={`bg-[#0B1F3A]/20 border border-white/10 rounded-3xl p-8 hover:border-[#00D4FF]/30 hover:bg-[#0B1F3A]/30 transition-all duration-300 flex flex-col justify-between group ${
+                    className={`bg-[#0B1F3A]/20 rounded-3xl p-8 glowing-card-border flex flex-col justify-between group ${
                       isWide ? 'md:col-span-2' : 'md:col-span-1'
                     }`}
                   >
@@ -233,7 +233,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
               
-              <div className="lg:col-span-5 bg-[#0B1F3A]/25 border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col justify-between hover:border-[#00D4FF]/20 transition-all duration-300">
+              <div className="lg:col-span-5 bg-[#0B1F3A]/25 glowing-card-border rounded-3xl p-8 md:p-10 flex flex-col justify-between">
                 <div className="space-y-5">
                   <span className="text-xs font-mono text-[#00D4FF] uppercase tracking-widest block font-bold">
                     OUR CONVICTION
@@ -250,7 +250,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="lg:col-span-7 bg-[#0B1F3A]/15 border border-white/10 rounded-3xl p-8 md:p-10 space-y-6 flex flex-col justify-center hover:border-[#00D4FF]/20 transition-all duration-300">
+              <div className="lg:col-span-7 bg-[#0B1F3A]/15 glowing-card-border rounded-3xl p-8 md:p-10 space-y-6 flex flex-col justify-center">
                 {MISSION_DETAILS.paragraphs.map((para, idx) => (
                   <p
                     key={idx}
@@ -335,7 +335,7 @@ export default function App() {
               </div>
 
               {/* Right content box */}
-              <div className="lg:col-span-7 bg-[#0B1F3A]/25 border border-white/5 rounded-2xl p-8 flex flex-col justify-between box-glow-cyan">
+              <div className="lg:col-span-7 bg-[#0B1F3A]/25 glowing-card-border rounded-2xl p-8 flex flex-col justify-between box-glow-cyan">
                 <div className="space-y-6">
                   <div className="inline-flex items-center gap-1.5 px-2 py-0.5 bg-[#00D4FF]/10 border border-[#00D4FF]/20 rounded text-[10px] font-mono text-[#00D4FF]">
                     ACTIVE BENEFIT DETAIL
@@ -350,7 +350,7 @@ export default function App() {
                     </p>
                   </div>
 
-                  <div className="p-5 bg-black/30 rounded-xl border border-white/5 space-y-2.5">
+                  <div className="p-5 bg-black/30 rounded-xl glowing-card-border space-y-2.5">
                     <h5 className="text-[10px] font-mono text-[#00D4FF]/70 uppercase tracking-widest font-semibold flex items-center gap-1.5 leading-none">
                       <Sparkles className="h-3 w-3" />
                       TECHNICAL EXPLAINER
@@ -395,7 +395,7 @@ export default function App() {
                 return (
                   <div
                     key={pillar.id}
-                    className={`bg-black/25 border border-white/10 rounded-3xl p-8 hover:border-[#00D4FF]/30 hover:bg-[#0B1F3A]/20 hover:shadow-[0_0_30px_rgba(0,212,255,0.05)] transition-all duration-300 flex flex-col justify-between ${
+                    className={`bg-black/25 rounded-3xl p-8 glowing-card-border flex flex-col justify-between ${
                       isWide ? 'md:col-span-7' : 'md:col-span-5'
                     }`}
                   >
@@ -444,7 +444,7 @@ export default function App() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
               
               {/* Left Column: Photo from generation nested in a premium Bento card */}
-              <div className="lg:col-span-6 bg-black/30 border border-white/10 rounded-3xl p-4 flex flex-col justify-between hover:border-[#00D4FF]/20 transition-all duration-300">
+              <div className="lg:col-span-6 bg-black/30 glowing-card-border rounded-3xl p-4 flex flex-col justify-between">
                 <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/5 bg-[#071120] group">
                   <img
                     src={canadianWinterImage}
@@ -476,7 +476,7 @@ export default function App() {
               </div>
 
               {/* Right Column: Editorial items inside a matching Bento card */}
-              <div className="lg:col-span-6 bg-[#0B1F3A]/15 border border-white/10 rounded-3xl p-8 md:p-10 flex flex-col justify-between hover:border-[#00D4FF]/20 transition-all duration-300">
+              <div className="lg:col-span-6 bg-[#0B1F3A]/15 glowing-card-border rounded-3xl p-8 md:p-10 flex flex-col justify-between">
                 <div>
                   <span className="text-xs font-mono text-[#00D4FF] uppercase tracking-widest block mb-2 font-bold">
                     PRE-LAUNCH RESILIENCE
@@ -635,7 +635,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="fixed bottom-6 left-6 z-40 p-2.5 rounded-full bg-[#0B1F3A] border border-[#00D4FF]/20 text-[#00D4FF] hover:text-white hover:bg-[#00D4FF]/20 shadow-2xl transition-all cursor-pointer no-print"
+            className="fixed bottom-6 left-6 z-40 p-2.5 rounded-full tangerine-glow-box text-[#FF5B00] shadow-2xl cursor-pointer no-print"
             aria-label="Back to Top"
           >
             <ArrowUpCircle className="h-5 w-5" />

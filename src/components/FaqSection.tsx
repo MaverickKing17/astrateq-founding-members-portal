@@ -17,7 +17,7 @@ export const FaqSection: React.FC = () => {
         return (
           <div
             key={idx}
-            className="bg-[#0B1F3A]/15 border border-white/10 rounded-2xl overflow-hidden hover:border-[#00D4FF]/25 transition-all duration-300"
+            className="bg-[#0B1F3A]/15 glowing-card-border overflow-hidden rounded-2xl"
           >
             <button
               onClick={() => toggleAccordion(idx)}

@@ -77,7 +77,7 @@ Diagnostic Integrity Test: Verified Passive CAN-Sniffing Active (No ECU Write Ha
   };
 
   return (
-    <div className="bg-[#0B1F3A]/25 border border-white/10 rounded-3xl p-6 md:p-10 box-glow-cyan max-w-5xl mx-auto hover:border-[#00D4FF]/25 transition-all duration-500">
+    <div className="bg-[#0B1F3A]/25 glowing-card-border rounded-3xl p-6 md:p-10 box-glow-cyan max-w-5xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <h3 className="text-xl font-display font-semibold text-white tracking-tight flex items-center gap-2">
@@ -152,7 +152,7 @@ Diagnostic Integrity Test: Verified Passive CAN-Sniffing Active (No ECU Write Ha
         </div>
 
         {/* Diagnostic Monitor */}
-        <div className="lg:col-span-7 bg-black/40 rounded-xl border border-white/5 overflow-hidden flex flex-col min-h-[320px]">
+        <div className="lg:col-span-7 bg-black/40 rounded-xl glowing-card-border overflow-hidden flex flex-col min-h-[320px]">
           {/* Bar decoration */}
           <div className="h-1 bg-gradient-to-r from-[#00D4FF] via-blue-900 to-[#071120]" />
           

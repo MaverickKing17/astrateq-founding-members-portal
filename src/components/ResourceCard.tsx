@@ -33,7 +33,7 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ doc }) => {
   };
 
   return (
-    <div className="bg-[#0B1F3A]/20 border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:border-[#00D4FF]/30 hover:bg-[#0B1F3A]/30 hover:shadow-[0_0_20px_rgba(0,212,255,0.05)] flex flex-col justify-between h-full relative overflow-hidden group">
+    <div className="bg-[#0B1F3A]/20 glowing-card-border rounded-3xl p-8 flex flex-col justify-between h-full relative overflow-hidden group">
       {/* Background radial highlight */}
       <div className="absolute inset-0 bg-gradient-to-tr from-[#00D4FF]/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none" />
 

@@ -29,10 +29,43 @@
   border-color: rgba(0, 212, 255, 0.3);
 }
 
-/* Scrollbar customizations */
+/* Super beautiful premium glowing border style for all cards on the page */
+.glowing-card-border {
+  border: 1px solid rgba(0, 212, 255, 0.45) !important;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.15), inset 0 0 12px rgba(0, 212, 255, 0.03) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.glowing-card-border:hover {
+  border-color: rgba(0, 212, 255, 0.85) !important;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.32), inset 0 0 15px rgba(0, 212, 255, 0.08) !important;
+}
+
+/* Tangerine orange glowing utilities for up-arrow and custom accents */
+.text-glow-tangerine {
+  color: #FF5B00 !important;
+  text-shadow: 0 0 10px rgba(255, 91, 0, 0.6), 0 0 20px rgba(255, 91, 0, 0.3);
+}
+
+.tangerine-glow-box {
+  background-color: #0d0a07 !important;
+  border-width: 1.5px !important;
+  border-color: rgba(255, 91, 0, 0.45) !important;
+  box-shadow: 0 0 18px rgba(255, 91, 0, 0.3), inset 0 0 10px rgba(255, 91, 0, 0.06) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tangerine-glow-box:hover {
+  border-color: rgba(255, 91, 0, 0.9) !important;
+  box-shadow: 0 0 30px rgba(255, 91, 0, 0.55), inset 0 0 15px rgba(255, 91, 0, 0.12) !important;
+  background-color: rgba(255, 91, 0, 0.15) !important;
+  color: #FFFFFF !important;
+}
+
+/* Glowing Tangerine Scrollbar customizations */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -40,12 +73,21 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0B1F3A;
-  border-radius: 4px;
+  background: #FF5B00;
+  border-radius: 5px;
+  border: 2px solid #071120;
+  box-shadow: 0 0 12px rgba(255, 91, 0, 0.85), inset 0 0 6px rgba(255, 91, 0, 0.4);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00D4FF;
+  background: #FF8500;
+  box-shadow: 0 0 18px rgba(255, 133, 0, 1.0), inset 0 0 8px rgba(255, 133, 0, 0.6);
+}
+
+/* Firefox scrollbar compatibility */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FF5B00 #071120;
 }
 
 /* Print Layout Support for Premium PDF Generation */
