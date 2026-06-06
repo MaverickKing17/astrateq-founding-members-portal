@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Poppins", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #071120;
+    color: #D6DCE5;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom glow animations and aesthetic touches */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.box-glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.1), inset 0 0 15px rgba(0, 212, 255, 0.05);
+}
+
+.border-glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #071120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B1F3A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00D4FF;
+}
+
+/* Print Layout Support for Premium PDF Generation */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #0B1F3A !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Hide non-print structures like buttons, navigation widgets, interactive panels, tools */
+  header,
+  footer,
+  nav,
+  button,
+  .no-print,
+  .interactive-controls,
+  .seo-schema-trigger,
+  .reading-bar,
+  .back-to-top,
+  .indicator-line {
+    display: none !important;
+  }
+  
+  /* Reset container widths */
+  .max-w-7xl, .container, main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 2% !important;
+  }
+  
+  /* Card optimization for print black and white printing */
+  .grid {
+    display: block !important;
+  }
+  
+  .card, .premium-card, div[role="listitem"] {
+    position: static !important;
+    background: #FFFFFF !important;
+    border: 1px solid #D6DCE5 !important;
+    border-radius: 4px !important;
+    color: #0B1F3A !important;
+    margin-bottom: 20px !important;
+    padding: 15px !important;
+    box-shadow: none !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Force headers to remain next to following paragraphs */
+  h1, h2, h3, h4 {
+    color: #071120 !important;
+    font-family: "Poppins", sans-serif !important;
+    page-break-after: avoid !important;
+    margin-top: 25px !important;
+    margin-bottom: 10px !important;
+  }
+
+  h1 { font-size: 24pt !important; border-bottom: 2px solid #071120; padding-bottom: 10px; }
+  h2 { font-size: 18pt !important; border-bottom: 1px solid #D6DCE5; padding-bottom: 5px; }
+  h3 { font-size: 14pt !important; }
+
+  /* Allow normal links to display target destinations */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 85%;
+    color: #666;
+  }
+
+  /* Page breaks */
+  .print-page-break {
+    page-break-before: always !important;
+  }
+  
+  /* Image optimization */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid !important;
+    border: 1px solid #D6DCE5 !important;
+    border-radius: 4px !important;
+    margin: 20px 0 !important;
+  }
+}

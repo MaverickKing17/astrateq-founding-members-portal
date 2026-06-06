@@ -1,0 +1,6 @@
+{
+  "name": "Astrateq Founding Member Guide",
+  "description": "Priority Access Edition. Built exclusively for Astrateq Gadgets founding members to welcome, educate, and build trust post-reservation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
